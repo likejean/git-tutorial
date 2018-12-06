@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Grid</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />    
+    </head>
+    <body>
+        <p>1. <b>Setting one column width:</b> you can lock the width of one column and have the sibling columns automatically resize around it. </p>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                1/3
+                </div>
+                <div class="col-6">
+                1/3 (col-6)
+                </div>
+                <div class="col">
+                1/3
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                1/3
+                </div>
+                <div class="col-3">
+                1/3 (col-6)
+                </div>
+                <div class="col">
+                1/3
+                </div>
+            </div>
+        </div>
+        <br>
+        <p>2. Apply col-{breakpoint}-auto classes<br> to size columns based on the real width of their content.<br>
+        {breakpoint} is -sm, -md, -lg </p>
+        <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col col-6">
+            1/3
+            </div>
+            <div class="col-md-auto">
+            1/3 Some content
+            </div>
+            <div class="col col-2">
+            1/3
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+            1/3
+            </div>
+            <div class="col-md-auto">
+            1/3 Some content
+            </div>
+            <div class="col col-lg-2">
+            1/3
+            </div>
+        </div>
+        </div>
+        <br>
+        <p>3. Create equal columns that span multiple rows by including a .w-100 where you want<br> the columns to break to a new line and center them.  </p>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col col-4">col</div>
+                <div class="col col-4">col</div>
+                <div class="w-100"></div>
+                <div class="col col-4">col</div>
+                <div class="col col-4">col</div>
+            </div>
+        </div>
+        <br>
+        <p>4. Horizontal alignment.  </p>
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col col-4">
+                One of two columns
+                </div>
+                <div class="col col-4">
+                One of two columns
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col col-4">
+                One of two columns
+                </div>
+                <div class="col col-4">
+                One of two columns
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="col col-4">
+                One of two columns
+                </div>
+                <div class="col col-4">
+                One of two columns
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col col-4">
+                One of two columns
+                </div>
+                <p>Center Content</p>
+                <div class="col col-4">
+                One of two columns
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col col-4">
+                One of two columns
+                </div>
+                <div class="col col-4">
+                One of two columns
+                </div>
+            </div>
+        </div>
+        <br>
+        <p>5. Vertical alignment.  </p>
+        <div class="container">
+            <div class="myrow row align-items-start">
+                <div class="col">
+                One of three columns
+                </div>
+                <div class="col">
+                One of three columns
+                </div>
+                <div class="col">
+                One of three columns
+                </div>
+            </div>
+            <div class="myrow row align-items-center">
+                <div class="col">
+                One of three columns
+                </div>
+                <div class="col">
+                One of three columns
+                </div>
+                <div class="col">
+                One of three columns
+                </div>
+            </div>
+            <div class="myrow row align-items-end">
+                <div class="col">
+                One of three columns
+                </div>
+                <div class="col">
+                One of three columns
+                </div>
+                <div class="col">
+                One of three columns
+                </div>
+            </div>
+
+            <div class="example-container">
+                <div class="example-row">
+                    <div class="example-content-main">Main content</div>
+                    <div class="example-content-secondary">Secondary content</div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

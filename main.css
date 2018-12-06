@@ -1,0 +1,15 @@
+.row {
+    border-style: ridge;
+    border-color: green;
+}
+
+.col {
+    border-style: solid;
+    border-color: red;
+}
+
+.myrow {
+    height: 100px;
+    background-color: yellow;
+}
+
